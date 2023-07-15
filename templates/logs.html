@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I AM Auditor</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 24px;
+            padding: 20px;
+            background-color: #306998;
+            color: #fff;
+        }
+
+        .card {
+            border: 1px solid #4d4dff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #191d28;
+            color: #fff;
+        }
+
+        pre {
+            font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>I AM Auditor</h1>
+    <div>
+        {% for log in logs %}
+        <div class="card">
+            <pre>{{ log }}</pre>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
