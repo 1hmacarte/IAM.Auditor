@@ -26,6 +26,7 @@ Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável
 - Flask
 - HTML
 - Docker
+
 ## GCP
 - IAM API
 - Logs
@@ -35,6 +36,8 @@ Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável
 
 
 ## Dependências
+
+
 
 # Como executar o projeto
 
