@@ -18,7 +18,7 @@ Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável
 
 
 ## Desenho de Arquitetura
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+![Modelo Conceitual]()
 
 # Tecnologias utilizadas
 ## Aplicação
