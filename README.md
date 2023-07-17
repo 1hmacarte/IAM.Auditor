@@ -50,7 +50,7 @@ Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável
 
 # Autor
 
-Wellington Mazoni de Andrade
+Hiago Souza 
 
-https://www.linkedin.com/in/wmazoni
+https://www.linkedin.com/in/hiago-souza-b27941187/
 
