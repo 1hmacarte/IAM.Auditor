@@ -78,83 +78,22 @@ https://github.com/1hmacarte/IAM.Auditor/blob/master/templates/index.html
 
 ### 5 - Crie a interface de resultados:
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>I AM Auditor</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #1a1a1a;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
+https://github.com/1hmacarte/IAM.Auditor/blob/master/templates/logs.html
 
-        h1 {
-            font-size: 24px;
-            padding: 20px;
-            background-color: #306998;
-            color: #fff;
-        }
-
-        .card {
-            border: 1px solid #4d4dff;
-            border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #191d28;
-            color: #fff;
-        }
-
-        pre {
-            font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
-            font-size: 14px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-    </style>
-</head>
-<body>
-    <h1>I AM Auditor</h1>
-    <div>
-        {% for log in logs %}
-        <div class="card">
-            <pre>{{ log }}</pre>
-        </div>
-        {% endfor %}
-    </div>
-</body>
-</html>
-
-_________________________________________________________________________________________
-
-6 - Crie o arquivo de requerimentos no mesmo diretório raiz onde está o código python.
+### 6 - Crie o arquivo de requerimentos no mesmo diretório raiz onde está o código python.
 
 requirements.txt:
 
-Flask==2.0.1
-google-cloud-logging==3.0.0
-google-auth==2.0.2
+https://github.com/1hmacarte/IAM.Auditor/blob/master/requirements.txt
 
-_________________________________________________________________________________________
-7 - Crie o arquivo Docker nomeando como Dockerfile.
+### 7 - Crie o arquivo Docker nomeando como Dockerfile.
 
 Dockerfile: 
 
-FROM python:3.9-slim-buster
-
-WORKDIR /app
-
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
-
-CMD ["python", "main.py"]
+https://github.com/1hmacarte/IAM.Auditor/blob/master/Dockerfile
 
 
-_________________________________________________________________________________________
-Seu diretório deve estar nessa estrutura 
+## Seu diretório deve estar nessa estrutura 
 
 - main.py
 - Dockerfile
@@ -163,29 +102,27 @@ Seu diretório deve estar nessa estrutura
   - index.html
   - logs.html
 
-_________________________________________________________________________________________
 
-8 - Navegue até o diretório da aplicação pelo terminal 
 
-execute os comandos 
+### 8 - Navegue até o diretório da aplicação pelo terminal 
 
-##Realize o build da imagem docker
+
+### Realize o build da imagem docker
 
 docker build -t iamauditor .
 
-##Defina uma tag para imagem
+### Defina uma tag para imagem
 docker tag iamauditor gcr.io/petpotter/iamauditor
 
 ##Realize o push da imagem para a biblioteta do Google container registry 
 
 docker push gcr.io/petpotter/iamauditor
 
-_________________________________________________________________________________________
-8 - Prepare a VPC de acordo as regras do seu ambiente, nesse exemplo utilizaremos a default
 
-_________________________________________________________________________________________
+### 9 - Prepare a VPC de acordo as regras do seu ambiente, nesse exemplo utilizaremos a default
 
-9 - Prepare a Service account para a aplicação.
+
+### 10 - Prepare a Service account para a aplicação.
 
 Ela precisa da permissão logging.logEntries.list concedida por IAM no projeto que será realizado a execução da auditoria
 
@@ -200,8 +137,8 @@ criado uma role customizada para a permissão logging.logEntries.list
 
 Grant access 
 
-_________________________________________________________________________________________
-10 - Navegue até o Cloud Run onde para criar um novo serviço
+
+### 11 - Navegue até o Cloud Run onde para criar um novo serviço
 
 Defina as preferências como:
 
