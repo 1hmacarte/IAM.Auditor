@@ -16,7 +16,7 @@ Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável
 
 
 ## Desenho de Arquitetura
-![Modelo Conceitual]()
+![](https://github.com/1hmacarte/assets/blob/drwa/Desenho%20tecnico.PNG)
 
 # Tecnologias utilizadas
 ## Aplicação
