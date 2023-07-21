@@ -38,7 +38,7 @@ Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável
 
 # Como executar o projeto
 
-## 1 - Prepare o ambiente python no terminal GCP de acordo com as bibliotecas que serão usadas :
+### 1 - Prepare o ambiente python no terminal GCP de acordo com as bibliotecas que serão usadas :
 
 Flask==2.0.1
 google-cloud-logging==3.0.0
@@ -46,7 +46,7 @@ google-auth==2.0.2
 
 
 
-## Habilite as APIS 
+### Habilite as APIS 
 
 IAM
 logs 
@@ -56,133 +56,27 @@ GCS
 
 
 
-## 2- crie um diretório para os arquivos e deploy no CLI do projeto que irá utilizar o app como por exemplo :
+### 2- crie um diretório para os arquivos e deploy no CLI do projeto que irá utilizar o app como por exemplo :
 
 home/logsiam/iamauditor
 
 
-## 3 - Prepare o arquivo do código python no diretório
+### 3 - Prepare o arquivo do código python no diretório
 
 main.py:
 
 https://github.com/1hmacarte/IAM.Auditor/blob/master/main.py
 	
 
-## 4 - Crie um folder para os arquivos html no mesmo diretório de onde ficará o código python, isso faz com que o flask renderize os templates html que serão criados.
+### 4 - Crie um folder para os arquivos html no mesmo diretório de onde ficará o código python, isso faz com que o flask renderize os templates html que serão criados.
 
 Preparae o arquivo da página inicial da aplicação como por exemplo:
 
 index.html:
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>I AM Auditor</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #191d28;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
+https://github.com/1hmacarte/IAM.Auditor/blob/master/templates/index.html
 
-        h1 {
-            font-size: 24px;
-            padding: 20px;
-            background-color: #306998;
-            color: #fff;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        nav {
-            margin-top: 50px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4d4dff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        a:hover {
-            background-color: #1a1aff;
-        }
-        
-        .cybersecurity-theme {
-            background-image: linear-gradient(to right bottom, #2b2e4a, #0e101c);
-            color: #fff;
-        }
-        
-        .cybersecurity-button {
-            background-color: #ff5f5f;
-            color: #fff;
-        }
-        
-        .cybersecurity-button:hover {
-            background-color: #ff3b3b;
-        }
-
-        .lottie-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <h1 class="cybersecurity-theme">I AM Auditor</h1>
-    
-    <p class="cybersecurity-theme">Exibição de logs.</p>
-    
-    <nav>
-        <ul>
-            <li><a href="/logs" class="cybersecurity-button">Ver Logs</a></li>
-        </ul>
-    </nav>
-
-    <div class="lottie-container">
-        <div id="lottie-animation"></div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
-    <script>
-        // Configurações do Lottie
-        var animationData = {
-            container: document.getElementById('lottie-animation'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: '/home/contatohiagomacarte/logs/lottieanimação.json' // Caminho para o arquivo JSON Lottie
-        };
-
-        // Carrega a animação com as configurações
-        var anim = bodymovin.loadAnimation(animationData);
-    </script>
-</body>
-</html>
-
-
-5 - Crie a interface de resultados:
+### 5 - Crie a interface de resultados:
 
 <!DOCTYPE html>
 <html>
