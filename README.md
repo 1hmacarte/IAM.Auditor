@@ -111,6 +111,8 @@ https://github.com/1hmacarte/IAM.Auditor/blob/master/Dockerfile
 
 docker build -t iamauditor .
 
+https://github.com/1hmacarte/assets/blob/drwa/Docker%20build%20image.jpeg
+
 ### Defina uma tag para imagem
 docker tag iamauditor gcr.io/petpotter/iamauditor
 
@@ -118,6 +120,7 @@ docker tag iamauditor gcr.io/petpotter/iamauditor
 
 docker push gcr.io/petpotter/iamauditor
 
+https://github.com/1hmacarte/assets/blob/drwa/docker%20push%20image%20to%20gcr.jpeg
 
 ### 9 - Prepare a VPC de acordo as regras do seu ambiente, nesse exemplo utilizaremos a default
 
@@ -127,7 +130,7 @@ docker push gcr.io/petpotter/iamauditor
 Ela precisa da permissão logging.logEntries.list concedida por IAM no projeto que será realizado a execução da auditoria
 
 ***
-obs: foi realizado a concessão do papel Editor para o desenvolvimento e análise através do security insights para identificar as permissões excesivas.
+obs: foi realizado a concessão do papel Editor na fase de primeiro desenvolvimento e análise através do security insights para identificar as permissões excesivas.
 
 Exemplo : 
 
@@ -137,6 +140,7 @@ criado uma role customizada para a permissão logging.logEntries.list
 
 Grant access 
 
+https://github.com/1hmacarte/assets/blob/drwa/create%20service%20account.jpeg
 
 ### 11 - Navegue até o Cloud Run onde para criar um novo serviço
 
