@@ -136,11 +136,15 @@ Exemplo :
 
 iamauditor@petpotter.iam.gserviceaccount.com
 
+![push](https://github.com/1hmacarte/assets/blob/drwa/create%20service%20account.jpeg)
+
 criado uma role customizada para a permissão logging.logEntries.list
+
+![push](https://github.com/1hmacarte/assets/blob/drwa/Create%20role.jpeg)
+
 
 Grant access 
 
-![push](https://github.com/1hmacarte/assets/blob/drwa/create%20service%20account.jpeg)
 
 
 ### 11 - Navegue até o Cloud Run onde para criar um novo serviço
