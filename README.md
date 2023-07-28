@@ -110,8 +110,7 @@ https://github.com/1hmacarte/IAM.Auditor/blob/master/Dockerfile
 ### Realize o build da imagem docker
 
 docker build -t iamauditor .
-
-https://github.com/1hmacarte/assets/blob/drwa/Docker%20build%20image.jpeg
+![Build](https://github.com/1hmacarte/assets/blob/drwa/Docker%20build%20image.jpeg)
 
 ### Defina uma tag para imagem
 docker tag iamauditor gcr.io/petpotter/iamauditor
@@ -120,7 +119,8 @@ docker tag iamauditor gcr.io/petpotter/iamauditor
 
 docker push gcr.io/petpotter/iamauditor
 
-https://github.com/1hmacarte/assets/blob/drwa/docker%20push%20image%20to%20gcr.jpeg
+![push](https://github.com/1hmacarte/assets/blob/drwa/docker%20push%20image%20to%20gcr.jpeg)
+
 
 ### 9 - Prepare a VPC de acordo as regras do seu ambiente, nesse exemplo utilizaremos a default
 
