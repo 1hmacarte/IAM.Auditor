@@ -8,12 +8,6 @@ A ferramenta I AM Auditor é uma aplicação Serveless implantada no Cloud Run d
 # Objetivo 
 Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável para acessar logs específicos do IAM. Isso oferece visibilidade completa sobre as concessões e revogações de roles, permitindo rastrear quem fez as alterações, quais roles foram modificadas e quando essas ações ocorreram.
 
-## Layout Consulta
-![Consultar logs](https://github.com/1hmacarte/assets/blob/drwa/consultalogs.jpeg)
-
-## Layout Resultados
-![Resultados](https://github.com/1hmacarte/assets/blob/drwa/results.jpeg)
-
 
 ## Desenho de Arquitetura
 ![](https://github.com/1hmacarte/assets/blob/drwa/Desenho%20tecnico.PNG)
@@ -231,6 +225,13 @@ Acesse a aplicação através do link disponibilizado e execute a query.
 ![deploy](https://github.com/1hmacarte/assets/blob/drwa/Deploy.jpeg)
 
 Será possível obter os logs 
+
+## Layout Consulta
+![Consultar logs](https://github.com/1hmacarte/assets/blob/drwa/consultalogs.jpeg)
+
+## Layout Resultados
+![Resultados](https://github.com/1hmacarte/assets/blob/drwa/results.jpeg)
+
 
 # Autor
 
