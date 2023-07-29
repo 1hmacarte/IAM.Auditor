@@ -145,6 +145,7 @@ criado uma role customizada para a permissão logging.logEntries.list
 
 Grant access 
 
+![grant](https://github.com/1hmacarte/assets/blob/drwa/grant%20access.jpeg)
 
 
 ### 11 - Navegue até o Cloud Run onde para criar um novo serviço
@@ -155,6 +156,10 @@ Defina as preferências como:
 
 gcr.io/petpotter/iamauditor@sha256:d315e7aa687d0d158b0d5d921579cd4763b6f3ad35460352f.........
 
+![gcrimage](https://github.com/1hmacarte/assets/blob/drwa/selecione%20a%20imagem%20no%20servi%C3%A7o%20que%20vai%20criar.jpeg)
+
+![gcrimage](https://github.com/1hmacarte/assets/blob/drwa/repository%20image.jpeg)
+
 -Service name :
 
 iamauditor
@@ -164,6 +169,8 @@ iamauditor
 como por exemplo 
 
 south america
+
+![region](https://github.com/1hmacarte/assets/blob/drwa/Defina%20a%20regiao%20e%20o%20nome.jpeg)
 
 -Autoscaling : 
 
@@ -202,6 +209,8 @@ Check this if you are creating a public API or website. (Site publico)
 -Na aba security defina a Service account criada para a aplicação 
 
 Service account :  iamauditor@petpotter.iam.gserviceaccount.com
+
+![security](https://github.com/1hmacarte/assets/blob/drwa/define%20access%20scope.jpeg)
 
 -Encryption
 
