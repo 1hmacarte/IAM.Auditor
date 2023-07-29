@@ -228,17 +228,9 @@ ________________________________________________________________________________
 
 Acesse a aplicação através do link disponibilizado e execute a query.
 
+![deploy](https://github.com/1hmacarte/assets/blob/drwa/Deploy.jpeg)
+
 Será possível obter os logs 
-
-
-```bash
-
-```
-
-
-```bash
-
-```
 
 # Autor
 
