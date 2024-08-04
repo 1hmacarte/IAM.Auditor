@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-A ferramenta I AM Auditor é uma aplicação Serveless implantada no Cloud Run da GCP oferece uma solução eficaz para simplificar a análise de logs IAM. Com os benefícios de acesso fácil, flexibilidade, filtragem personalizada e integração com o ecossistema da GCP, você pode melhorar a segurança, a conformidade e a tomada de decisões informadas em relação ao gerenciamento de acesso. Ao utilizar essa ferramenta , você pode obter insights valiosos para o gerenciamento de evidências no IAM.
+A ferramenta I AM Auditor é uma aplicação Serveless implantada no Google Cloud Run, oferece uma solução eficaz para simplificar a análise de logs IAM com a capacidade de direcionar para o SIEM centralizado. Com os benefícios de acesso fácil, flexibilidade, filtragem personalizada e integração com o ecossistema da GCP, você pode melhorar a segurança, a conformidade e a tomada de decisões informadas em relação ao gerenciamento de acesso. Ao utilizar essa ferramenta , você pode obter insights valiosos para o gerenciamento de evidências no IAM.
 
 # Objetivo 
 Acesso e Visibilidade: A ferramenta I AM Auditor fornece uma interface amigável para acessar logs específicos do IAM. Isso oferece visibilidade completa sobre as concessões e revogações de roles, permitindo rastrear quem fez as alterações, quais roles foram modificadas e quando essas ações ocorreram.
